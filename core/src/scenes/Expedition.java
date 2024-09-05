@@ -873,28 +873,21 @@ public class Expedition implements Screen{
 		
 		if(activeChar == 1) {
 			setCharacter(1);
-			addEnterListener(skill1, skill1.getText().toString());
-		    addEnterListener(skill2, skill2.getText().toString());
-		    addEnterListener(skill3, skill3.getText().toString());
-		    addEnterListener(trait, trait.getText().toString());
 		    addEnterListener(throwDice, "Barbarian");
 		}
 		else if(activeChar == 2) {
 			setCharacter(2);
-			addEnterListener(skill1, skill1.getText().toString());
-		    addEnterListener(skill2, skill2.getText().toString());
-		    addEnterListener(skill3, skill3.getText().toString());
-		    addEnterListener(trait, trait.getText().toString());
 		    addEnterListener(throwDice, "Sorcerer");
 		}
 		else if(activeChar == 3) {
 			setCharacter(3);
-			addEnterListener(skill1, skill1.getText().toString());
-		    addEnterListener(skill2, skill2.getText().toString());
-		    addEnterListener(skill3, skill3.getText().toString());
-		    addEnterListener(trait, trait.getText().toString());
 		    addEnterListener(throwDice, "Thief");
 		}
+		
+		addEnterListener(skill1, skill1.getText().toString());
+	    addEnterListener(skill2, skill2.getText().toString());
+	    addEnterListener(skill3, skill3.getText().toString());
+	    addEnterListener(trait, trait.getText().toString());
 	}
 	
 	@Override
